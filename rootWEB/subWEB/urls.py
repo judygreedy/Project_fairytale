@@ -18,5 +18,5 @@ from django.urls import path
 from subWEB import views
 
 urlpatterns = [
-    path('test/', views.testfuc)
+    path('main/', views.func_main)
 ]

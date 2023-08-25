@@ -5,20 +5,30 @@ import openai
 openai.api_key = ""
 
 
+# Test 용으로 잘 작동하는지 확인하기 위한 파일 입니다. 
+
 # Create your views here.
 def funcTest(request):
     print(">>> check_ProjectTest_funcTest")
 
 
-    str_ask = " '초록사과의 과수원 대모험'으로 3개의 챕터로 구성된 동화를 제작해줘. dictionary 구성은  1) 챕터의 위치를 알수 있는 chapt, 2) 챕터의 제목을 알 수 있는 title, 3) 챕터의 내용을 넣은 content, 4) 이미지로 출력하고 싶어서 그런데 챕터의 내용을 이미지 설명하듯이 background에 넣어서 부탁해. 최종적으로 한개의 dictionary 형태로 대답 부탁해. dictionary 값 제외하고는 대괄호는 쓰지 말아줘"
+    # str_ask = " '초록사과의 과수원 대모험'으로 3개의 챕터로 구성된 동화를 제작해줘. dictionary 구성은   1) 챕터의 제목을 알 수 있는 title, 2) 챕터의 내용을 넣은 content, 3) 이미지로 출력하고 싶어서 그런데 챕터의 내용을 이미지 설명하듯이 영어로 background에 넣어서 부탁해. 최종적으로 한개의 dictionary 형태로 대답 부탁해. dictionary 값 제외하고는 대괄호는 쓰지 말아줘"
+
+    str_ask = "'예원이의 대학교탐방'제목으로 한 문단의 동화를 제작부탁해. dictionary 구성해주고 제목은 title, 내용은 content, 동화 발생 장소설명은 영어로 한줄의 길이로하여 background로 key 값을 지정하고 value를 너가 채워줘. "
     fairytale_dic = openai_chatgpt(str_ask)
     print(fairytale_dic)
+    #print(fairytale_dic[''])
 
-    img_src = openapi_delle("cat in the box",1,"1024x1024")
+
+    # img_src = openapi_delle("cat in the box",1,"1024x1024")
+    img_src = openapi_delle(fairytale_dic,1,"1024x1024")
+
     print(img_src)
 
     content = {
         "fairytale_dic" : fairytale_dic,
+        "title" : fairytale_dic['title'],
+        "content": fairytale_dic['content'],
         "img_src" : img_src
     }
 

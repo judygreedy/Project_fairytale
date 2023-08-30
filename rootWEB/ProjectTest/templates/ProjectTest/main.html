@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestPage</title>
+</head>
+<body>
+<!--https://iridescent-zeal.tistory.com/199-->
+     <h1>Django 사용자 입력받기</h1>
+      <h2>HTML Form 이용하기</h2>
+      <hr>
+      <form action="{% url 'createform' %}" method="POST">
+        {% csrf_token %}
+        <div>
+          <label for="studentID">학번</label>
+          <input type="text" name="studentID" id="studentID">
+        </div>
+        <div>
+          <label for="name">이름</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="major">전공</label>
+          <input type="text" name="major" id="major">
+        </div>
+        <br>
+        <input type="submit" value="제출">
+      </form>
+
+
+<!--    <h1>main 페이지   </h1>-->
+
+<!--    <form action="{% url 'home' %}" method="POST">-->
+<!--        <div>-->
+<!--            <h3>타겟층</h3>-->
+<!--            <fieldset>-->
+<!--              <legend>나이</legend>-->
+
+<!--              <div>-->
+<!--                <input type="radio" id="age1" name="age" value="age1" checked />-->
+<!--                <label for="age1">0~3세</label>-->
+<!--              </div>-->
+
+<!--              <div>-->
+<!--                <input type="radio" id="age2" name="age" value="age2" />-->
+<!--                <label for="age2">4~6세</label>-->
+<!--              </div>-->
+
+<!--              <div>-->
+<!--                <input type="radio" id="age3" name="age" value="age3" />-->
+<!--                <label for="age3">7~9세</label>-->
+<!--              </div>-->
+<!--            </fieldset>-->
+
+<!--            <fieldset>-->
+<!--              <legend>성별</legend>-->
+<!--              <div>-->
+<!--                <input type="radio" id="sex1" name="sex" value="sex1" checked />-->
+<!--                <label for="sex1">남자</label>-->
+<!--              </div>-->
+
+<!--              <div>-->
+<!--                <input type="radio" id="sex2" name="sex" value="sex2" />-->
+<!--                <label for="sex2">여자</label>-->
+<!--              </div>-->
+<!--            </fieldset>-->
+<!--        </div>-->
+<!--        <br>-->
+<!--        <br>-->
+
+<!--        <div>-->
+<!--            <h3>주인공</h3>-->
+<!--            <fieldset>-->
+<!--                <legend>기타정보</legend>-->
+<!--                이름 : <input type="text" id="ch_name"><br>-->
+<!--                나이 : <input type="text" id="ch_age"><br>-->
+<!--                성격 : <input type="text" id="ch_mood">-->
+<!--            </fieldset>-->
+
+<!--            <fieldset>-->
+<!--              <legend>성별</legend>-->
+<!--              <div>-->
+<!--                  <input type="radio" id="ch_sex1" name="ch_sex" value="ch_sex1" checked />-->
+<!--                  <label for="ch_sex1">남자</label>-->
+<!--              </div>-->
+
+<!--              <div>-->
+<!--                <input type="radio" id="ch_sex2" name="ch_sex" value="ch_sex2" />-->
+<!--                <label for="ch_sex2">여자</label>-->
+<!--              </div>-->
+<!--            </fieldset>-->
+<!--        </div>-->
+<!--        <br>-->
+<!--        <br>-->
+
+<!--        <div>-->
+<!--            <h3>동화 내용</h3>-->
+<!--            <fieldset>-->
+<!--                <legend>원하는 정보 입력</legend>-->
+<!--                주제 : <input type="text" id="user_keyword"><br>-->
+<!--                길이 : <input type="text" id="user_len"><br>-->
+<!--            </fieldset>-->
+
+<!--            <fieldset>-->
+<!--              <legend>분위기</legend>-->
+<!--              <div>-->
+<!--                  <input type="radio" id="mood1" name="mood1" value="mood1" checked />-->
+<!--                  <label for="mood1">분위기1</label>-->
+<!--              </div>-->
+
+<!--              <div>-->
+<!--                <input type="radio" id="mood2" name="mood2" value="mood2" />-->
+<!--                <label for="mood2">분위기2</label>-->
+<!--              </div>-->
+<!--            </fieldset>-->
+<!--        </div>-->
+<!--        <br>-->
+<!--        <br>-->
+<!--    </form>-->
+
+
+<!--    <input type="submit" value="submit">-->
+
+</body>
+</html>

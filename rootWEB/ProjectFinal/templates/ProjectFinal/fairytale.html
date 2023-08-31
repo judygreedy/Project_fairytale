@@ -27,7 +27,11 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <!-- fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+
+       <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
       <!-- owl stylesheets --> 
       <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
       <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
@@ -57,6 +61,8 @@
           }
 
 
+
+
         </style>
    </head>
    <body>
@@ -66,11 +72,19 @@
          <div class="header_main">
             <div class="mobile_menu">
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <div class="logo_mobile"><a href="make"><img src="{% static 'images/logo.png' %}"></a></div>
+                  <div class="logo_mobile">
+                      <a href="make"><h1>TaleTeller</h1></a>
+
+<!--                      <a href="make"><img src="{% static 'images/logo.png' %}"></a>-->
+                  </div>
                </nav>
             </div>
             <div class="container-fluid">
-               <div class="logo"><a href="make"><img src="{% static 'images/logo.png' %}"></a></div>
+               <div class="logo">
+                   <a href="make"><h1>TaleTeller</h1></a>
+
+<!--                   <a href="make"><img src="{% static 'images/logo.png' %}"></a>-->
+               </div>
             </div>
          </div>
       </div>
@@ -81,13 +95,13 @@
             <div class="row">
                <div class="col-md-6">
                   <div class="about_taital_main">
-                      <h1 class="about_taital">동화 Title</h1>
-                      <p class="about_text">동화 내용 적기 {{ask_str}}</p>
+                      <h1 class="about_taital" style="font-family: 'Gamja Flower', cursive; font-weight:900; font-size: 70px;">동화 Title</h1>
+                      <p class="about_text" style="font-family: 'Gamja Flower', cursive; font-size:30px;">동화 내용 적기 {{ask_str}}</p>
                       <div style="height: 10px;">
 
                       </div>
                       <a href="make">
-                        <button type="button" class="su_btn" >동화 만들기</button>
+                        <button type="button" class="su_btn" style="font-family: 'Gamja Flower', cursive;">동화 다시 만들기</button>
                       </a>
                   </div>
                </div>

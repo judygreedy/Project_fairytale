@@ -19,6 +19,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('ProjectMain.urls')),  # 실제 서비스 화면
+    path('', include('ProjectFinal.urls')),  # 실제 서비스 화면
+    path('main/', include('ProjectMain.urls')),
     path('test/', include('ProjectTest.urls')) # 테스트용 화면
 ]

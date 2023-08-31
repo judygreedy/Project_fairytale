@@ -7,7 +7,7 @@
 <body>
     <h4>Test_home page</h4>
     <div>
-        <form action="result_url" method="get">
+        <form name='input_info' action="final" method="get">
 
             <label>character_name</label> <input type="text" name ="character_name"><br>
             <label>character_age</label> <input type="text" name ="character_age"><br>
@@ -22,10 +22,18 @@
             <label>detail_length</label> <input type="text" name ="detail_length"><br>
 
 
-            <button type="submit">submit</button>
-<!--            <a href="#content">here</a>-->
+<!--            <button type="submit">submit</button>-->
         </form>
+        <a href="#content" onclick="document.forms['input_info'].submit();">here</a>
+
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>content</h2>
+    <select>
+        <div id="content">
+
+        </div>
+    </select>
 
 
 </body>

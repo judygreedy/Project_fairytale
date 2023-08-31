@@ -3,7 +3,6 @@ from django.http import HttpResponse
 import openai
 import json
 
-openai.api_key = ""
 
 
 # Test 용으로 잘 작동하는지 확인하기 위한 파일 입니다. 
@@ -11,9 +10,12 @@ openai.api_key = ""
 # Create your views here.
 
 def funcTest(request):
+    print(openapi_delle("Esther, a curious girl, builds a rocket with friends and launches it from her nature-surrounded town, reaching awe-inspiring heights in the sky. Journeying through space, she encounters marvelous sights but faces fuel shortage. Resourcefully finding a space station, she heads home, driven by her insatiable curiosity and wonder for the universe.",1,"1024x1024"))
     return render(request, 'ProjectTest/test.html')
 
+def funcTestFinal(request):
 
+    return render(request, 'ProjectTest/test_main.html')
 
 def funcTestHome(request):
     return render(request, 'ProjectTest/test_home.html')

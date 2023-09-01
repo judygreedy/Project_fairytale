@@ -3,7 +3,7 @@ from django.shortcuts import render
 import json
 import openai
 
-openai.api_key = ""
+openai.api_key = "FINAL_!"
 
 # Create your views here.
 

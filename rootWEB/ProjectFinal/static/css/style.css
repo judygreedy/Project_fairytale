@@ -502,15 +502,16 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #1f1f1f;
+    color: #032a44 ;
     font-weight: bold;
+    padding : 0px 0px 6% 0px;
 }
 
 .about_text {
     width: 100%;
     float: left;
-    font-size: 16px;
-    color: #1f1f1f;
+    font-size: 30px;
+    color: #032a44 ;
     margin: 0px;
     padding-top: 40px;
 }
@@ -540,8 +541,9 @@ button {
 }
 
 .about_img {
-    width: 100%;
+    width: 90%;
     float: left;
+    padding : 23% 3% 0px 10%;
 }
 
 

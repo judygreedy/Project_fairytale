@@ -59,9 +59,7 @@
          #msform {
            /* width: 400px; */
            width : 40%;
-           margin : auto;
-           padding : auto;
-           /* margin: 10px auto; */
+           margin: 50px auto;
            text-align: center;
            position: relative;
          }
@@ -69,11 +67,11 @@
            background: white;
            border: 0 none;
            border-radius: 5px;
-           box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+           box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
            padding: 20px 30px;
            box-sizing: border-box;
            width: 100%;
-           /*margin: 0 10%;*/
+           margin: 0 10%;
 
            /*stacking fieldsets above each other*/
            position: relative;
@@ -211,12 +209,9 @@
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
 
-       <!-- owl stylesheets -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+      <!-- owl stylesheets -->
       <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
       <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -238,7 +233,7 @@
             <div class="mobile_menu">
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
                   <div class="logo_mobile">
-                     <a href="make"><label sytle="font-family: 'Work Sans', sans-serif; font-size:80px;text-shadow: 5px 5px white;">TaleTeller</label></a>
+                     <a href="make"><h1 sytle="font-family: 'Gamja Flower', cursive;">TaleTeller</h1></a>
 <!--                     <a href="make">-->
 <!--                        <img src="{% static 'images/logo.png' %}">-->
 <!--                     </a>-->
@@ -247,7 +242,7 @@
             </div>
             <div class="container-fluid">
                <div class="logo">
-                  <a href="make"><label style="font-family: 'Work Sans', sans-serif; font-size:80px; text-shadow: 5px 5px white;">TaleTeller</></a>
+                  <a href="make"><h1>TaleTeller</h1></a>
 <!--                  <a href="make">-->
 <!--                     <img src="{% static 'images/logo.png' %}">-->
 <!--                  </a>-->
@@ -304,6 +299,31 @@
                              </fieldset>
                            </form>
 
+
+<!--                           <form name="input_info" action="fairytale" method="get" >-->
+<!--                              <div verticla-align="right">-->
+<!--                                 <div><label style="font-family: 'Gamja Flower', cursive;">주인공 이름 </label> <input type="text" name ="character_name" style="font-family: 'Gamja Flower', cursive;" placeholder="원하는 주인공 이름을 적어주세요"><br></div>-->
+<!--                                 <div><label style="font-family: 'Gamja Flower', cursive;">주인공 나이 </label> <input type="text" name ="character_age" style="font-family: 'Gamja Flower', cursive;" placeholder="주인공이 몇살이었으면 좋겠나요"><br></div>-->
+<!--                                 <div><label style="font-family: 'Gamja Flower', cursive;">주인공 성별 </label> <input type="text" name ="character_gender" style="font-family: 'Gamja Flower', cursive;" placeholder="주인공의 성별이 어떤것이였으면 좋겠나요"><br></div>-->
+<!--                                 <div><label style="font-family: 'Gamja Flower', cursive;">주인공 성격 </label> <input type="text" name ="character_personality" style="font-family: 'Gamja Flower', cursive;" placeholder="주인공 성격이 어땠으면 좋겠나요"><br></div>-->
+<!--                              </div>-->
+
+<!--                              <div verticla-align="left">-->
+<!--                                 <div><label style="font-family: 'Gamja Flower', cursive;">듣는이 나이 </label> <input type="text" name ="listener_age" style="font-family: 'Gamja Flower', cursive;" placeholder="동화를 읽는 사람은 몇살인가요"><br></div>-->
+<!--                                 <div><label style="font-family: 'Gamja Flower', cursive;">듣는이 성별 </label> <input type="text" name ="listener_gender" style="font-family: 'Gamja Flower', cursive;" placeholder="동화를 읽는 사람의 성별을 알려주세요"><br></div>-->
+<!--                              </div>-->
+
+<!--                              <div verticla-align="left">-->
+<!--                                 <div><label style="font-family: 'Gamja Flower', cursive;">동화 분위기 </label> <input type="text" name ="detail_mood" style="font-family: 'Gamja Flower', cursive;" placeholder="동화가 어떤 분위기 였으면 좋겠나요"><br></div>-->
+<!--                                 <div><label style="font-family: 'Gamja Flower', cursive;">동화 키워드 </label> <input type="text" name ="detail_keyword" style="font-family: 'Gamja Flower', cursive;" placeholder="동화의 주제를 말해주세요"><br></div>-->
+<!--                                 <div><label style="font-family: 'Gamja Flower', cursive;">동화 단개수 </label> <input type="text" name ="detail_length" style="font-family: 'Gamja Flower', cursive;" placeholder="동화 길이는 어느정도 되었으면 좋겠나요"><br></>-->
+<!--                              </div>-->
+
+
+
+<!--                              <button type="submit" class="su_btn" style="font-family: 'Gamja Flower', cursive; font-size:25px;" >동화 만들기</button>-->
+<!--                           </form>-->
+<!--                        </div>-->
 
                         <div id="loading" style="display: none;">
                            <img src="{% static 'src/loading.gif' %}" alt="Loading....">

@@ -235,7 +235,7 @@ button {
     background-image: url(../images/banner-bg.png);
     height: auto;
     background-size: 100%;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .bg-light {
@@ -351,13 +351,14 @@ button {
 
 .banner_section {
     width: 100%;
-    float: left;
-    padding-bottom: 305px;
+    float: center;
+    padding: 10px 0px 305px 0px;
+    /* padding-bottom: 305px; */
 }
 
 .banner_taital {
     width: 100%;
-    float: left;
+    float: center;
     font-size: 80px;
     color: #ffffff;
     font-weight: bold;

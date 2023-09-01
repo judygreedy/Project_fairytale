@@ -232,30 +232,46 @@
    </head>
    <body>
       <!-- header section start -->
-      <div class="header_section">
+      <div class="header_section" >
          <div class="header_main">
             <div class="mobile_menu">
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
                   <div class="logo_mobile">
-                     <a href="make"><label sytle="font-family: 'Work Sans', sans-serif; font-size:80px;text-shadow: 5px 5px white;">TaleTeller</label></a>
-<!--                     <a href="make">-->
-<!--                        <img src="{% static 'images/logo.png' %}">-->
-<!--                     </a>-->
+                     <a href="make">
+                         <label sytle="font-family: 'Work Sans', sans-serif; font-size:85px;text-shadow: 5px 5px white;">TaleTeller</label>
+                     </a>
                   </div>
                </nav>
             </div>
             <div class="container-fluid">
                <div class="logo">
-                  <a href="make"><label style="font-family: 'Work Sans', sans-serif; font-size:80px; text-shadow: 5px 5px white;">TaleTeller</></a>
-<!--                  <a href="make">-->
-<!--                     <img src="{% static 'images/logo.png' %}">-->
-<!--                  </a>-->
+                   <a href="make"><label style="font-family: 'Work Sans', sans-serif; font-size:85px; text-shadow: 5px 5px white;">TaleTeller</label></a>
                </div>
             </div>
          </div>
-         <!-- banner section start -->
-
+      </div>
       <!-- header section end -->
+
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_taital_main">
+                     <h1 class="about_taital">동화 Title</h1>
+                     <p class="about_text">동화 내용 적기 {{ask_str}}</p>
+                  </div>
+               </div>
+               <div class="col-md-6 padding_right_0">
+<!--                  delle 결과 값-->
+                  <div><img src="{% static 'images/about-img.png' %}" class="about_img"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+
+
 
       <!-- Javascript files-->
       <script src="{% static 'js/jquery.min.js' %}"></script>

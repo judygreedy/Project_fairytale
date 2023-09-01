@@ -479,6 +479,13 @@ button {
     width: 100%;
     float: left;
     padding-bottom: 90px;
+    background-color : #FBF0B2;
+    background-image : url(../images/about-bg.png);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 30%;
+    padding-top: 100px;
 }
 
 .about_taital_main {
@@ -902,7 +909,7 @@ button {
     height: auto;
     padding-top: 250px;
     background-size: 100% 100%;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     background-repeat: no-repeat;
 }
 
